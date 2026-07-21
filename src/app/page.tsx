@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -59,7 +58,15 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500 lg:px-12">
-        © {new Date().getFullYear()} AIvtor. ИП Зубков С.В.
+        <p>© {new Date().getFullYear()} AIvtor. ИП Зубков С.В.</p>
+        <div className="mt-2 flex justify-center gap-4">
+          <Link href="/privacy" className="hover:text-white">
+            Политика конфиденциальности
+          </Link>
+          <Link href="/terms" className="hover:text-white">
+            Пользовательское соглашение
+          </Link>
+        </div>
       </footer>
     </div>
   );
