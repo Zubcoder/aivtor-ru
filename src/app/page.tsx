@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0B0F19] text-white">
-      <header className="flex items-center justify-between px-6 py-5 lg:px-12">
-        <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="AIvtor" width={140} height={40} priority />
+      <header className="flex items-center justify-between px-6 py-4 lg:px-12">
+        <Link href="/" className="relative h-12 w-40">
+          <Image src="/logo.png" alt="AIvtor" fill className="object-contain" sizes="160px" priority />
         </Link>
         <Link
           href="https://app.aivtor.ru"
@@ -16,21 +16,23 @@ export default function Home() {
         </Link>
       </header>
 
-      <main className="mx-auto max-w-5xl px-6 py-16 text-center lg:px-12">
+      <main className="mx-auto max-w-5xl px-6 pt-10 pb-16 text-center lg:px-12">
         <div className="flex flex-col items-center">
-          <Image
-            src="/logo.png"
-            alt="AIvtor"
-            width={220}
-            height={64}
-            priority
-            className="mb-8"
-          />
-          <h1 className="text-4xl font-extrabold leading-tight tracking-tight lg:text-6xl">
+          <div className="relative h-28 w-72 lg:h-36 lg:w-96">
+            <Image
+              src="/logo.png"
+              alt="AIvtor"
+              fill
+              className="object-contain"
+              sizes="(max-width: 1024px) 288px, 384px"
+              priority
+            />
+          </div>
+          <h1 className="text-5xl font-extrabold leading-tight tracking-tight lg:text-7xl mt-2">
             Платформа для авторов <br />
             <span className="text-[#06B6D4]">с искусственным интеллектом</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-300">
+          <p className="mx-auto mt-6 max-w-2xl text-xl text-gray-300">
             Создавайте лендинги, цифровые товары, подписки и контент —
             всё в одном месте, без разработчиков и дизайнеров.
           </p>
