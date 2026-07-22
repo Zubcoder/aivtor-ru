@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#0B0F19] text-white">
       <header className="flex items-center justify-between px-6 py-4 lg:px-12">
         <Link href="/">
-          <img src="/logo.png" alt="AIvtor" className="h-10 w-auto object-contain" />
+          <img src="/logo.png?v=2" alt="AIvtor" className="h-10 w-auto object-contain" />
         </Link>
         <Link
           href="https://app.aivtor.ru"
@@ -18,7 +18,7 @@ export default function Home() {
       <main className="mx-auto max-w-5xl px-6 pt-10 pb-16 text-center lg:px-12">
         <div className="flex flex-col items-center">
           <img
-            src="/logo.png"
+            src="/logo.png?v=2"
             alt="AIvtor"
             className="h-28 w-auto object-contain lg:h-36"
           />
