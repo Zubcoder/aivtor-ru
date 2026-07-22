@@ -39,7 +39,7 @@ export default function Home() {
             </Link>
             <Link
               href="#how-it-works"
-              className="rounded-full border border-white/20 bg-white/5 px-8 py-3.5 font-semibold hover:bg-white/10 transition"
+              className="rounded-full border border-white/20 bg-[#0B0F19] px-8 py-3.5 font-semibold hover:bg-white/5 transition"
             >
               Как это работает
             </Link>
@@ -52,7 +52,7 @@ export default function Home() {
             {modules.map((m) => (
               <div
                 key={m.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-left hover:border-white/20 transition"
+                className="rounded-2xl border border-white/10 bg-[#0B0F19] p-6 text-left hover:border-white/20 transition"
               >
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#7C3AED]/20 to-[#06B6D4]/20 text-[#06B6D4]">
                   {m.icon}
@@ -70,7 +70,7 @@ export default function Home() {
             {steps.map((s, i) => (
               <div
                 key={s.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-left"
+                className="rounded-2xl border border-white/10 bg-[#0B0F19] p-6 text-left"
               >
                 <div className="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#7C3AED] text-sm font-bold">
                   {i + 1}
