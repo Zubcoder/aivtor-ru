@@ -18,9 +18,9 @@ export default function Home() {
       <main className="mx-auto max-w-5xl px-6 pt-10 pb-16 text-center lg:px-12">
         <div className="flex flex-col items-center">
           <img
-            src="/logo.png?v=5"
+            src="/logo.png?v=6"
             alt="AIvtor"
-            className="h-32 w-auto object-contain lg:h-44"
+            className="h-40 w-auto object-contain lg:h-52"
           />
           <h1 className="text-5xl font-extrabold leading-tight tracking-tight lg:text-7xl mt-4">
             Платформа для авторов <br />
